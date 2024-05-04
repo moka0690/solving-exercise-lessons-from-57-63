@@ -98,3 +98,22 @@ function sayHello(theName, theGender) {
   console.log(checkStatus(38, "Osama", true)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
   console.log(checkStatus(true, 38, "Osama")); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
   console.log(checkStatus(false, "Osama", 38)); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire
+
+
+ 
+
+
+
+
+  let potn =  "<select>";
+       
+  function createSelectBox(startYear, endYear) {
+      for (let i = startYear; i <= endYear; i++) {
+        potn += `<option value="${i}">${i}</option>`
+         "</select>"
+              }
+      document.write(potn);
+ 
+  }
+  
+  createSelectBox(2000, 2021);
