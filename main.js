@@ -100,11 +100,6 @@ function sayHello(theName, theGender) {
   console.log(checkStatus(false, "Osama", 38)); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire
 
 
- 
-
-
-
-
   let potn =  "<select>";
        
   function createSelectBox(startYear, endYear) {
@@ -113,7 +108,24 @@ function sayHello(theName, theGender) {
          "</select>"
               }
       document.write(potn);
- 
-  }
+   }
   
   createSelectBox(2000, 2021);
+ 
+
+function multiply(...numbers) {
+    let result = 1;
+  for (let i = 0; i < numbers.length; i++) {
+    if(typeof numbers[i] === "number") {
+           result *= Math.trunc(numbers[i]);
+    }
+
+  }
+  console.log( (result));
+}
+
+
+  multiply(10, 20); // 200
+multiply("A", 10, 30); // 300
+multiply(100.5, 10, "B"); // 1000
+
